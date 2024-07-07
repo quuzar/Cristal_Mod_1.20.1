@@ -1,0 +1,16 @@
+{
+  "item.cristal_mod.sapphire": "Сапфир",
+  "item.cristal_mod.raw_sapphire": "Грубый Сапфир",
+
+  "item.cristal_mod.metal_detector": "Металоискатель",
+
+  "block.cristal_mod.sapphire_block": "Сапфировый Блок",
+  "block.cristal_mod.raw_sapphire_block": "Блок Сапфировой Руды",
+
+  "block.cristal_mod.sapphire_ore": "Сапфировая Руда",
+  "block.cristal_mod.deepslate_sapphire_ore": "Сланцевая Сапфировая Руда",
+  "block.cristal_mod.nether_sapphire_ore": "Незеритовая Сапфировая Руда",
+  "block.cristal_mod.end_stone_sapphire_ore": "Эндериевая Сапфировая Руда ",
+
+  "creativetab.cristal_tab": "Меню Кристал"
+}

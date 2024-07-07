@@ -1,0 +1,16 @@
+{
+  "item.cristal_mod.sapphire": "Sapphire",
+  "item.cristal_mod.raw_sapphire": "Raw Sapphire",
+
+  "item.cristal_mod.metal_detector": "Metal Detector",
+
+  "block.cristal_mod.sapphire_block": "Sapphire Block",
+  "block.cristal_mod.raw_sapphire_block": "Raw Sapphire Block",
+
+  "block.cristal_mod.sapphire_ore": "Sapphire Ore",
+  "block.cristal_mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.cristal_mod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.cristal_mod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+
+  "creativetab.cristal_tab": "Cristal Tab"
+}

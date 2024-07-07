@@ -1,0 +1,12 @@
+
+{
+  "values": [
+    "cristal_mod:sapphire_block",
+    "cristal_mod:raw_sapphire_block",
+
+    "cristal_mod:sapphire_ore",
+    "cristal_mod:deepslate_sapphire_ore",
+    "cristal_mod:nether_sapphire_ore",
+    "cristal_mod:end_stone_sapphire_ore"
+  ]
+}
