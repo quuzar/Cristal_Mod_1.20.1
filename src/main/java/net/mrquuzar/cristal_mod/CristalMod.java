@@ -1,8 +1,11 @@
 package net.mrquuzar.cristal_mod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -15,6 +18,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrquuzar.cristal_mod.Item.ModCreativeModTabs;
 import net.mrquuzar.cristal_mod.Item.ModItems;
 import net.mrquuzar.cristal_mod.block.ModBlocks;
+import net.mrquuzar.cristal_mod.event.BlockTransformEvent;
+
 import org.slf4j.Logger;
 
 
@@ -35,8 +40,11 @@ public class CristalMod {
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::doClientStuff);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new BlockTransformEvent());
         modEventBus.addListener(this::addCreative);
     }
 
@@ -51,6 +59,8 @@ public class CristalMod {
         }
     }
 
+
+
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
@@ -60,6 +70,16 @@ public class CristalMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
         }
     }
+
+    private void setup(final FMLCommonSetupEvent event) {
+        // Общая инициализация на стороне сервера
+    }
+
+    private void doClientStuff(final FMLClientSetupEvent event) {
+        // Инициализация клиентских компонентов
+    }
 }
+

@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrquuzar.cristal_mod.CristalMod;
+import net.mrquuzar.cristal_mod.Item.ModItems;
 import net.mrquuzar.cristal_mod.block.ModBlocks;
 
 public class ModCreativeModTabs {
@@ -21,7 +22,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
-
+                        pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
