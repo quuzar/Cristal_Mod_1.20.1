@@ -45,6 +45,7 @@ public class CristalMod {
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new BlockTransformEvent());
+
         modEventBus.addListener(this::addCreative);
     }
 

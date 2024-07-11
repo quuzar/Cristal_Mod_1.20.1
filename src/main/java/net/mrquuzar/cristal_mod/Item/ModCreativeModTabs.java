@@ -21,8 +21,13 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.cristal_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
-                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.AMETHYST.get());
+                        pOutput.accept(ModItems.BRILLIANT.get());
+
+                        pOutput.accept(ModItems.BLOODY_RUBY.get());
+
+                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
