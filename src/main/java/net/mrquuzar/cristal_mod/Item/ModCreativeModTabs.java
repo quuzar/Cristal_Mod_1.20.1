@@ -9,15 +9,17 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrquuzar.cristal_mod.CristalMod;
-import net.mrquuzar.cristal_mod.Item.ModItems;
 import net.mrquuzar.cristal_mod.block.ModBlocks;
 
-public class ModCreativeModTabs {
+public class ModCreativeModTabs
+{
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MDOE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CristalMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CRISTAL_TAB = CREATIVE_MDOE_TABS.register("cristal_tab",
-            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.SAPPHIRE.get()))
+            () -> CreativeModeTab
+                    .builder()
+                    .icon(()-> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.cristal_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
@@ -37,12 +39,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
-
                     })
                     .build());
 
 
-    public static void register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus)
+    {
         CREATIVE_MDOE_TABS.register(eventBus);
-    };
+    }
 }
